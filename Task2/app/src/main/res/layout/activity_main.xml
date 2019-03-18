@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/buttonstyles"
+    tools:context="com.example.ahmedpc.task2.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/food" />
+       <TextView
+          android:id="@+id/tv_name"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="8dp"
+           android:layout_marginEnd="100dp"
+          android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+          app:layout_constraintLeft_toLeftOf="parent"
+          android:textColor="@color/colorPrimaryDark"
+          app:layout_constraintTop_toBottomOf="@+id/imageView"
+          tools:text="Chicken Tikka" />
+
+    <Button
+        android:id="@+id/btndate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:text="Sar 28" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        tools:text="Ingridients: Chicken, Tomato, Salt, Pepper, chillies, Onion." />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <TextView
+            android:id="@+id/tvquan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Quantity" />
+
+        <Button
+            android:id="@+id/btndec"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/tvquan"
+            tools:layout_editor_absoluteY="318dp"
+            tools:text="-" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_constraintEnd_toStartOf="@+id/btninc"
+            app:layout_constraintStart_toEndOf="@+id/btndec"
+            tools:layout_editor_absoluteY="318dp"
+            tools:text="1" />
+
+        <Button
+            android:id="@+id/btninc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="318dp"
+            tools:text="+" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/buttonstyles"
+            android:textAllCaps="false"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            tools:text="Size" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/buttonstyles"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:textAllCaps="false"
+            tools:text="Side Dish" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/buttonstyles"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:textAllCaps="false"
+            tools:text="Sauce" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textAllCaps="false"
+            android:background="@drawable/buttonstyles"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            tools:text="Topping" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:text="Add Special Instructions" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Without pickel. Need Change"
+        android:textAllCaps="false"
+        android:gravity="left"
+        android:textColor="@color/darkgrey"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/buttonstyles"
+        tools:text="Add Item To Cart" />
+
+
+</android.support.constraint.ConstraintLayout>

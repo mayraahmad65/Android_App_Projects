@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:text="Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvtitle" android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
+    <TextView
+            android:text="A digital pattern generator is a piece of electronic test equipment or software used to generate digital electronics stimuli. Digital electronics stimuli are a specific kind of electrical waveform varying between two conventional voltages that correspond to two logic states "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvcontent" android:textAppearance="@style/TextAppearance.AppCompat.Button"/>
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:text="Delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btndel"
+                android:layout_weight="1"/>
+        <Button
+                android:text="Edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnedit"
+                android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

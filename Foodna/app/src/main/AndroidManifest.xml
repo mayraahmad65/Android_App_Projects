@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ahmedpc.foodna">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainLauncherActivity">
+
+        </activity>
+        <activity
+            android:name=".SignInActivity"
+            android:label="@string/title_activity_sign_in"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".LocationActivity"
+            android:label="@string/title_activity_location"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AboutFoodnaActivity"
+            android:label="@string/title_activity_about_foodna"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SideBarActivityMain"
+            android:theme="@style/AppTheme" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListViewActivity"
+            android:label="@string/title_activity_list_view"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

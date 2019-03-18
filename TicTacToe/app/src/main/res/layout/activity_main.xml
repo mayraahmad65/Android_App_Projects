@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center">
+
+        <TableRow android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center">
+            <Button
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:layout_margin="2pt"
+                    android:id="@+id/btn1"
+                    android:onClick="btnClick"/>
+            <Button
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:layout_margin="2pt"
+                    android:id="@+id/btn2"
+                    android:onClick="btnClick"/>
+            <Button
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:layout_margin="2pt"
+                    android:id="@+id/btn3"
+                    android:onClick="btnClick"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center">
+            <Button
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:layout_margin="3pt"
+                    android:id="@+id/btn4"
+                    android:onClick="btnClick"/>
+            <Button
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:layout_margin="2pt"
+                    android:id="@+id/btn5"
+                    android:onClick="btnClick"/>
+            <Button
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:layout_margin="2pt"
+                    android:id="@+id/btn6"
+                    android:onClick="btnClick"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center">
+            <Button
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:layout_margin="2pt"
+                    android:id="@+id/btn7"
+                    android:onClick="btnClick"/>
+            <Button
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:layout_margin="2pt"
+                    android:id="@+id/btn8"
+                    android:onClick="btnClick"/>
+            <Button
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:layout_margin="2pt"
+                    android:id="@+id/btn9"
+                    android:onClick="btnClick"/>
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

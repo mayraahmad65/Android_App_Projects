@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape"
+
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="378dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/shape"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/chikkentikka" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="403dp"
+            android:background="@drawable/shape"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_pic">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_weight="1"
+                android:text="Name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_pic" />
+
+            <TextView
+                android:id="@+id/tv_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="2"
+                android:text="Ingredients"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="SAR 28"
+                android:textColor="@color/red"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_ingredients" />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

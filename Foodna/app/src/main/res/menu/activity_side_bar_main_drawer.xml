@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_MainLauncherActivity"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_SettingsFragment"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_AboutFoodnaFragment"
+            android:title="About Foodna" />
+        <item
+            android:id="@+id/nav_FAQFragment"
+            android:title="FAQ" />
+        <item
+            android:id="@+id/nav_log_out"
+            android:title="Log Out"></item>
+    </group>
+
+</menu>

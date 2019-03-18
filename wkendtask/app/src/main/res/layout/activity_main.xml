@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.ahmedpc.wkendtask.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/tv_res"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Restaurant"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/foodie"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_image">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_weight="4"
+                android:text="Chicken Tikka "
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:background="@color/white"
+                android:text="Sar 28"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_1">
+
+            <TextView
+                android:id="@+id/tv_ingredients"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="130dp"
+                android:layout_marginStart="16dp"
+                android:text="Ingridients: Chicken, Tomato, Salt, Pepper, chillies, Onion."
+                android:textColor="@color/darkgrey"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_2">
+
+            <TextView
+                android:id="@+id/tvquan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:text="Quantity"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btndec"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="-"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/tvquan"
+                tools:layout_editor_absoluteY="318dp" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/btninc"
+                app:layout_constraintStart_toEndOf="@+id/btndec"
+                tools:layout_editor_absoluteY="318dp" />
+
+            <Button
+                android:id="@+id/btninc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="+"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="318dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_3">
+
+            <Button
+                android:id="@+id/btn_size"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/buttonstyle"
+                android:gravity="center_vertical"
+                android:paddingEnd="0dp"
+                android:paddingStart="16dp"
+                android:text="Size"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_dish"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/buttonstyle"
+                android:gravity="center_vertical"
+                android:paddingEnd="0dp"
+                android:paddingStart="16dp"
+                android:text="Side Dish"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_4">
+
+            <Button
+                android:id="@+id/btn_sauce"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/buttonstyle"
+                android:gravity="center_vertical"
+                android:paddingEnd="0dp"
+                android:paddingStart="16dp"
+                android:text="Sauce"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_topping"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/buttonstyle"
+                android:gravity="center_vertical"
+                android:paddingEnd="0dp"
+                android:paddingStart="16dp"
+                android:text="Topping"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_5">
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="0dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="16dp"
+                android:paddingTop="5dp"
+                android:text="Add Special Instructions"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_6">
+
+            <Button
+                android:id="@+id/btn_need"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@color/lightgrey"
+                android:gravity="start"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:text="Without pickel. Need Change"
+                android:textAllCaps="false"
+                android:textColor="@color/darkgrey"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/btn_item"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_add" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_item"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:text="Add Item To Cart"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

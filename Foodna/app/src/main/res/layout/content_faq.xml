@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ll_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="5"
+            android:text="What does foodna do?"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_gravity="center"
+            app:srcCompat="@android:drawable/btn_plus" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ll_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_1">
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:text="How to be part of Foodna" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_gravity="center"
+            app:srcCompat="@android:drawable/ic_input_add" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ll_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_2">
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:text="I didn't receive my order" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_gravity="center"
+            app:srcCompat="@android:drawable/ic_input_add" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ll_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_3">
+
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:text="How can i reorder the previous order?" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_4"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            app:srcCompat="@android:drawable/ic_input_add" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ll_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_4">
+
+        <TextView
+            android:id="@+id/tv_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:text="How can i contact Foodna?" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_5"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_gravity="center"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ll_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_5">
+
+        <TextView
+            android:id="@+id/tv_6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:text="What's the  exclusive feature?" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_6"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_6">
+
+        <TextView
+            android:id="@+id/tv_7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:text="How can i delete my account"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_7"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/ic_input_add" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
